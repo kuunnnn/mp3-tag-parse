@@ -1,0 +1,10 @@
+export default {
+  title: 'TITLE1234567890123456789012345',
+  artist: 'ARTIST123456789012345678901234',
+  album: 'ALBUM1234567890123456789012345',
+  year: '2001',
+  comment: 'COMMENT123456789012345678901',
+  track: 1,
+  genre: 'Pop',
+}
+

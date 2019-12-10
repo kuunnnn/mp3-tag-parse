@@ -1,0 +1,120 @@
+TEXT： 歌词作者
+TENC： 编码
+WXXX： URL链接(URL)
+TCOP： 版权(Copyright)
+TOPE： 原艺术家
+TCOM： 作曲家
+TDAT： 日期
+TPE3： 指挥者
+TPE2： 乐队
+TPE1： 艺术家相当于ID3v1的Artist
+TPE4： 翻译（记录员、修改员）
+TYER： 年代相当于ID3v1的Year 是用 ASCII 码表示的数字
+USLT： 歌词
+TALB： 专辑相当于ID3v1的Album
+TIT1： 内容组描述
+TIT2： 标题相当于ID3v1的Title
+TIT3： 副标题
+TCON： 流派（风格）直接用字符串表示 相当于ID3v1的Genre
+TBPM： 每分钟节拍数
+COMM： 注释相当于ID3v1的Comment
+TDLY： 播放列表返录
+TRCK： 音轨（曲号）相当于ID3v1的Track 格式:N/M 其中 N 为专集中的第 N 首,M 为专集中共 M 首,N 和 M 为ASCII 码表示的数字
+TFLT： 文件类型
+TIME： 时间　
+TKEY： 最初关键字
+TLAN： 语言
+TLEN： 长度
+TMED： 媒体类型
+TOAL： 原唱片集
+TOFN： 原文件名
+TOLY： 原歌词作者
+TORY： 最初发行年份
+TOWM： 文件所有者（许可证者）
+TPOS： 作品集部分
+TPUB： 发行人
+TRDA： 录制日期
+TRSN： Intenet电台名称
+TRSO： Intenet电台所有者
+TSIZ： 大小 　
+TSRC： ISRC（国际的标准记录代码）
+TSSE： 编码使用的软件（硬件设置）
+UFID： 唯一的文件标识符
+AENC： 音频加密技术 　
+
+
+
+AENC [[＃sec|音频加密]]
+APIC [＃sec4.15所附图片]
+COMM [＃sec4.11评论]
+COMR [＃sec4.25商业框架]
+ENCR [＃sec4.26加密方法注册]
+EQUA [＃sec4.13均衡]
+ETCO [＃sec4.6事件计时代码]
+GEOB [＃sec4.16通用封装对象]
+GRID [＃sec4.27组标识注册]
+IPLS [＃sec4.4参与人员列表]
+LINK [＃sec4.21链接的信息]
+MCDI [＃sec4.5音乐CD标识符]
+MLLT [＃sec4.7 MPEG位置查找表]
+OWNE [＃sec4.24所有权框架]
+PRIV [＃sec4.28专用框架]
+PCNT [＃sec4.17播放计数器]
+POPM [＃sec4.18流行表]
+POSS [＃sec4.22位置同步帧]
+RBUF [＃sec4.19推荐的缓冲区大小]
+RVAD [＃sec4.12相对音量调整]
+RVRB [＃sec4.14混响]
+SYLT [＃sec4.10同步的歌词/文本]
+SYTC [＃sec4.8同步速度代码]
+TALB [#TALB专辑/电影/节目标题]
+TBPM [#TBPM BPM（每分钟心跳数）]
+TCOM [#TCOM作曲家]
+TCON [#TCON内容类型]
+TCOP [#TCOP版权消息]
+TDAT [#TDAT日期]
+TDLY [#TDLY播放列表延迟]
+TENC [#TENC编码者]
+TEXT [#TEXT歌词作者/文字作者]
+TFLT [#TFLT文件类型]
+TIME [#TIME时间]
+TIT1 [＃TIT1内容组描述]
+TIT2 [＃TIT2标题/歌曲名称/内容描述]
+TIT3 [＃TIT3字幕/描述细化]
+TKEY [#TKEY初始键]
+TLAN [#TLAN语言]
+TLEN [#TLEN长度]
+TMED [#TMED媒体类型]
+TOAL [#TOAL原始专辑/电影/节目标题]
+TOFN [#TOFN原始文件名]
+TOLY [#TOLY原创歌词作者/文字作者]
+TOPE [#TOPE原始艺术家/表演者]
+TORY [#TORY原始发行年份]
+TOWN [#TOWN文件所有者/被许可方]
+TPE1 [＃TPE1表演者/独奏者]
+TPE2 [＃TPE2乐队/管弦乐队/伴奏]
+TPE3 [＃TPE3导体/执行器的改进]
+TPE4 [＃TPE4解释，重新混合或以其他方式修改]
+TPOS [一组的#TPOS部分]
+TPUB [#TPUB发布者]
+TRCK [#TRCK设置的轨道号/位置]
+TRDA [#TRDA记录日期]
+TRSN [#TRSN Internet广播电台名称]
+TRSO [#TRSO Internet广播电台所有者]
+TSIZ [#TSIZ大小]
+TSRC [#TSRC ISRC（国际标准记录代码）]
+TSSE [用于编码的#TSEE软件/硬件和设置]
+TYER [#TYER年]
+TXXX [#TXXX用户定义的文本信息框]
+UFID [＃sec4.1唯一文件标识符]
+USER [＃sec4.23使用条款]
+USLT [＃sec4.9不同步的歌词/文本转录]
+WCOM [#WCOM商业信息]
+WCOP [#WCOP版权/法律信息]
+WOAF [#WOAF官方音频文件页面]
+WOAR [#WOAR艺术家/表演者官方网站]
+WOAS [#WOAS官方音频源网页]
+WORS [#WORS官方互联网广播电台主页]
+WPAY [#WPAY付款]
+WPUB [#WPUB Publishers官方网页]
+WXXX [#WXXX用户定义的URL链接框架]

@@ -1,0 +1,16 @@
+{
+  "name": "id3tag-parse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "jest": "^24.7.1",
+    "babel-jest": "^24.9.0",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  }
+}
