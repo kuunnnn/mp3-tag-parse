@@ -1,12 +1,12 @@
 import { ID3V1 } from "../lib/id3v1.mjs";
 import { resolve } from 'path'
 import fse from 'fs-extra'
-import result_read from './result/id3v1-read.mjs'
-import id3v1EmptyTag from './result/id3v1-empty.mjs'
-import id3v1Write_template from './result/id3v1-writre-whole-template.mjs'
+import result_read from './result/id3v1-read.js'
+import id3v1EmptyTag from './result/id3v1-empty.js'
+import id3v1Write_template from './result/id3v1-writre-whole-template.js'
 
-const readId3v1TagFileUrl = resolve( process.cwd(), "./test/v1tag-read.mp3" );
-const writeId3v1TagFileUrl = resolve( process.cwd(), "./test/v1tag-write.mp3" );
+const readId3v1TagFileUrl = resolve( process.cwd(), "./test-files/v1tag-read.mp3" );
+const writeId3v1TagFileUrl = resolve( process.cwd(), "./test-files/v1tag-write.mp3" );
 const buffer_read = fse.readFileSync( readId3v1TagFileUrl );
 
 describe( "ID3V1", () => {
