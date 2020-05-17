@@ -24,25 +24,5 @@ describe( "encode-read-prefix", () => {
     expect( readBytesToUtf16BE( b1, 0 ) ).toEqual( "A破晓" );
     expect( readBytesToUtf16BE( b1 ) ).toEqual( "A破晓" );
   } );
-  test( 'utf32le', () => {
-    const b1 = [
-      0x41, 0x00, 0x00, 0x00,
-      0x34, 0x78, 0x00, 0x00,
-      0x53, 0x66, 0x00, 0x00
-    ];
-    expect( readBytesToUTF32LE( b1, 0, b1.length ) ).toEqual( "A破晓" );
-    expect( readBytesToUTF32LE( b1, 0 ) ).toEqual( "A破晓" );
-    expect( readBytesToUTF32LE( b1 ) ).toEqual( "A破晓" );
-  } );
-  test( 'utf32be', () => {
-    const b1 = [
-      0x00, 0x00, 0x00, 0x41,
-      0x00, 0x00, 0x78, 0x34,
-      0x00, 0x00, 0x66, 0x53
-    ];
-    expect( readBytesToUTF32BE( b1, 0, b1.length ) ).toEqual( "A破晓" );
-    expect( readBytesToUTF32BE( b1, 0 ) ).toEqual( "A破晓" );
-    expect( readBytesToUTF32BE( b1 ) ).toEqual( "A破晓" );
-  } )
 } );
 

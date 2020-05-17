@@ -1,4 +1,4 @@
-export default {
+exports.module={
   title: 'TITLE1234567890',
   artist: 'ARTIST12345678',
   album: 'ALBUM1234567890',

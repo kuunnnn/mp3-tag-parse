@@ -1,4 +1,4 @@
-export default {
+exports.module= {
   "album": "",
   "artist": "",
   "comment": "",

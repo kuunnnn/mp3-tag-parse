@@ -1,9 +1,9 @@
-import { ID3V1 } from "../lib/id3v1.mjs";
-import { resolve } from 'path'
-import fse from 'fs-extra'
-import result_read from './result/id3v1-read.js'
-import id3v1EmptyTag from './result/id3v1-empty.js'
-import id3v1Write_template from './result/id3v1-writre-whole-template.js'
+const { ID3V1 } = require( "../lib/id3v1.js" )
+const { resolve } = require( 'path' )
+const fse = require( 'fs-extra' )
+const result_read = require( './result/id3v1-read.js' ).module
+const id3v1EmptyTag = require( './result/id3v1-empty.js' ).module
+const id3v1Write_template = require( './result/id3v1-writre-whole-template.js' ).module
 
 const readId3v1TagFileUrl = resolve( process.cwd(), "./test-files/v1tag-read.mp3" );
 const writeId3v1TagFileUrl = resolve( process.cwd(), "./test-files/v1tag-write.mp3" );
@@ -17,12 +17,12 @@ describe( "ID3V1", () => {
     expect( ID3V1.parse( Buffer.alloc( 200 ) ) ).toEqual( null )
   } );
   test( 'parse-empty-tag', () => {
-    const buf = Buffer.alloc(128);
-    buf.write("TAG");
-    expect( ID3V1.parse( buf )).toEqual( null )
+    const buf = Buffer.alloc( 128 );
+    buf.write( "TAG" );
+    expect( ID3V1.parse( buf ) ).toEqual( null )
   } );
   test( 'parse-not-buffer-params', () => {
-    const wrapper = () => ID3V1.parse(30);
+    const wrapper = () => ID3V1.parse( 30 );
     expect( wrapper ).toThrow( "I need a buffer params" )
   } );
   test( 'write-not-tag', () => {
@@ -36,8 +36,8 @@ describe( "ID3V1", () => {
   } );
   test( 'write-title-error-params', () => {
     const buffer_write = fse.readFileSync( writeId3v1TagFileUrl );
-    const wrapper = () => ID3V1.writeTitle(30,"34");
-    const wrapper2 = () => ID3V1.writeTitle(buffer_write,34);
+    const wrapper = () => ID3V1.writeTitle( 30, "34" );
+    const wrapper2 = () => ID3V1.writeTitle( buffer_write, 34 );
     expect( wrapper ).toThrow( "I need a buffer value" );
     expect( wrapper2 ).toThrow( "I need a string value" );
   } );
@@ -105,6 +105,6 @@ describe( "ID3V1", () => {
       ...id3v1Write_template,
       genre: 13,
     } ) );
-    expect( tag ).toEqual( id3v1Write_template );
+    expect( tag ).toEqual(id3v1Write_template );
   } );
 } );
